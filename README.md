@@ -1,15 +1,20 @@
-#EpiCollect5 -> SQL Server | Production Sync
-#Project: daily-import
+# 📊 EpiCollect5 → SQL Server | Production Sync  
+**Project Name:** `daily-sales-downloader`
 
-#Usage:
-    #python epicollect.py               # sync last N days (from .env), silent
-    #python epicollect.py --days 30     # override: last 30 days
-    #python epicollect.py --full        # full sync, no date filter
-    #python epicollect.py --verbose     # show progress in terminal
+---
 
-#Log file records:
-    - Each run: date, inserted count, skipped count, duration
-    - Errors only (auth failures, insert errors, connection issues)
+## 🚀 Overview
+This project synchronizes data from **EpiCollect5** to **SQL Server** for production use.  
+It is designed for automated daily sales data extraction, transformation, and storage.
 
-#Requirements:
-    pip install requests pyodbc python-dotenv tenacity
+---
+
+## ⚙️ Usage
+
+Run the script with different options based on your needs:
+
+```bash
+python epicollect.py               # Sync last N days (defined in .env), silent
+python epicollect.py --days 30     # Override: sync last 30 days
+python epicollect.py --full        # Full sync (no date filter)
+python epicollect.py --verbose     # Show progress in terminal
