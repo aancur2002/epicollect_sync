@@ -1,5 +1,5 @@
-EpiCollect5 -> SQL Server | Production Sync
-Project: daily-sales-tigers-brewery
+#EpiCollect5 -> SQL Server | Production Sync
+#Project: daily-import
 
 Usage:
     python epicollect.py               # sync last N days (from .env), silent
