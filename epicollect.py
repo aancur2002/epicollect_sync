@@ -131,7 +131,7 @@ def load_config() -> dict:
         )
     else:
         conn_str = (
-            f"DRIVER={{SQL Server}};"
+            f"DRIVER={{ODBC Driver 17 for SQL Server}};"
             f"SERVER={_env('SQL_SERVER')};"
             f"DATABASE={_env('SQL_DATABASE')};"
             f"UID={_env('SQL_UID')};"
